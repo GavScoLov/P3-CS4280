@@ -1,0 +1,22 @@
+Author: Gavin Love
+Project: 3
+Submission Date: April 10th, 2024
+
+Invocation:
+ statSem [file]
+
+BNF:
+ S -> CD
+ A -> F AP
+ AP -> F ?$ | .
+ B -> . t2 A !
+ C -> t2 *
+ D -> H ? D | empty
+ E -> ,AAH | ,;FH
+ F -> t1 | t2
+ G -> B | C | J
+ H -> E? | G. | empty
+ J -> *" A .
+
+Notes:
+
